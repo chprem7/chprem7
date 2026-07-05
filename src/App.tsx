@@ -19,7 +19,7 @@ function App() {
 <li><Link to="/abouts">About</Link></li>
 <li><Link to="/contacts">Contacts</Link></li>
 <li><Link to="/blogs">Blogs</Link></li>
-<li><link to ="/signup">SignUp</link></li>
+<li><Link to ="/signup">SignUp</Link></li>
 </ul>
 </nav>
 <Routes>

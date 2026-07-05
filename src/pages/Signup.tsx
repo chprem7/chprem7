@@ -46,7 +46,7 @@ export function SignupForm() {
 
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Full Name</label>
+          <label>Full Name in Details</label>
           <br />
           <input
             type="text"
