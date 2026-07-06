@@ -1,5 +1,7 @@
 
 import { useState } from "react";
+import type { ChangeEvent, FormEvent } from "react";
+
 export function SignupForm() {
   const [formData, setFormData] = useState({
     name: "",
@@ -10,7 +12,7 @@ export function SignupForm() {
 
   const [message, setMessage] = useState("");
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
 
     setFormData({
@@ -19,7 +21,7 @@ export function SignupForm() {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (formData.password !== formData.confirmPassword) {
@@ -110,6 +112,7 @@ export function SignupForm() {
         </p>
       )}
     </div>
+    
   );
 }
 
